@@ -34,7 +34,7 @@ const tempFarenheit = trunc* 9/5 +32
 
   const changeCelcius = () => {
     setIsCelcius(!isCelcius)
-    setIsUnit(!setIsUnit)
+    setIsUnit(!isUnit)
   }
 
   return (
@@ -50,7 +50,7 @@ const tempFarenheit = trunc* 9/5 +32
      <div><b> Pressure: </b> { weither.main?.pressure } mb </div>
    </div>
    </div>
-   <div> { isCelcius? trunc: truncFarenheit} {isUnit? " °C " : " °F "} </div>
+   <div> { isCelcius? trunc: truncFarenheit} {isUnit?  '°C'  :  '°F' } </div>
    <button onClick={changeCelcius}>  Change to °F/°C </button>
     </div>
       
